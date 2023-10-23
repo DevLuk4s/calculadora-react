@@ -45,6 +45,8 @@ function Calculator() {
       setNum("");
       setPrevNum("");
       setOperator("");
+    } else if (value === "+/-") {
+      setNum((parseFloat(num) * -1).toString());
     } else {
       setNum(num + value);
     }
