@@ -3,10 +3,12 @@ import "./Calculator.css";
 
 export default function Calculator() {
   const inputRef = useRef(null);
+  // UseState para gerenciar o estado da calculadora
   const [num, setNum] = useState("");
   const [prevNum, setPrevNum] = useState("");
   const [operador, setOperador] = useState("");
 
+  // Função para realizar cálculos
   const calculator = () => {
     if (prevNum !== "") {
       switch (operador) {
@@ -29,16 +31,19 @@ export default function Calculator() {
     }
   };
 
+  // Função para focar no input quando a página é carregada
   const focusInput = () => {
     if (inputRef.current) {
       inputRef.current.focus();
     }
   };
 
+  // UseEffect para chamar focusInput quando o componente é montado
   useEffect(() => {
     focusInput();
   }, []);
 
+  // Função para lidar com os cliques nos botões
   const HandleButtonClick = (value) => {
     if (
       value === "+" ||
