@@ -77,25 +77,43 @@ export default function Calculator() {
     <div className="container">
       <input type="text" value={num} ref={inputRef} />
       <div className="container__button">
-        <button onClick={() => HandleButtonClick("C")}>C</button>
-        <button onClick={() => HandleButtonClick("+/-")}>+/-</button>
-        <button onClick={() => HandleButtonClick("%")}>%</button>
-        <button onClick={() => HandleButtonClick("/")}>/</button>
+        <button onClick={() => HandleButtonClick("C")} className="orange">
+          C
+        </button>
+        <button onClick={() => HandleButtonClick("+/-")} className="orange">
+          +/-
+        </button>
+        <button onClick={() => HandleButtonClick("%")} className="orange">
+          %
+        </button>
+        <button onClick={() => HandleButtonClick("/")} className="orange">
+          /
+        </button>
         <button onClick={() => HandleButtonClick("7")}>7</button>
         <button onClick={() => HandleButtonClick("8")}>8</button>
         <button onClick={() => HandleButtonClick("9")}>9</button>
-        <button onClick={() => HandleButtonClick("x")}>x</button>
+        <button onClick={() => HandleButtonClick("x")} className="orange">
+          x
+        </button>
         <button onClick={() => HandleButtonClick("4")}>4</button>
         <button onClick={() => HandleButtonClick("5")}>5</button>
         <button onClick={() => HandleButtonClick("6")}>6</button>
-        <button onClick={() => HandleButtonClick("-")}>-</button>
+        <button onClick={() => HandleButtonClick("-")} className="orange">
+          -
+        </button>
         <button onClick={() => HandleButtonClick("1")}>1</button>
         <button onClick={() => HandleButtonClick("2")}>2</button>
         <button onClick={() => HandleButtonClick("3")}>3</button>
-        <button onClick={() => HandleButtonClick("+")}>+</button>
+        <button onClick={() => HandleButtonClick("+")} className="orange">
+          +
+        </button>
         <button onClick={() => HandleButtonClick("0")}>0</button>
-        <button onClick={() => HandleButtonClick(".")}>.</button>
-        <button onClick={() => HandleButtonClick("=")}>=</button>
+        <button onClick={() => HandleButtonClick(".")} className="orange">
+          .
+        </button>
+        <button onClick={() => HandleButtonClick("=")} className="orange">
+          =
+        </button>
       </div>
     </div>
   );
