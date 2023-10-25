@@ -55,6 +55,7 @@ export default function Calculator() {
       if (prevNum === "") {
         setPrevNum(num);
       } else {
+        calculator()
         setPrevNum(num);
       }
       setOperador(value);
