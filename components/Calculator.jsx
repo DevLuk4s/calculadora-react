@@ -28,6 +28,8 @@ export default function Calculator() {
           setNum(((parseFloat(num) / 100) * parseFloat(prevNum)).toString());
           break;
       }
+      setOperador("");
+      setPrevNum("");
     }
   };
 
@@ -55,7 +57,7 @@ export default function Calculator() {
       if (prevNum === "") {
         setPrevNum(num);
       } else {
-        calculator()
+        calculator();
         setPrevNum(num);
       }
       setOperador(value);
