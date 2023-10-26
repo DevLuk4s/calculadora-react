@@ -19,7 +19,7 @@ export default function Calculator() {
           setNum((parseFloat(num) * parseFloat(prevNum)).toString());
           break;
         case "-":
-          setNum((parseFloat(num) - parseFloat(prevNum)).toString());
+          setNum((parseFloat(prevNum) - parseFloat(num)).toString());
           break;
         case "/":
           setNum((parseFloat(num) / parseFloat(prevNum)).toString());
@@ -28,8 +28,6 @@ export default function Calculator() {
           setNum(((parseFloat(num) / 100) * parseFloat(prevNum)).toString());
           break;
       }
-      setOperador("");
-      setPrevNum("");
     }
   };
 
